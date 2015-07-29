@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'iOSPlayground' do
+    pod 'ReactiveCocoa', '~> 2.4.7'
+end
+
+target 'iOSPlaygroundTests' do
+
+end
+
+target 'iOSPlaygroundUITests' do
+
+end
+
