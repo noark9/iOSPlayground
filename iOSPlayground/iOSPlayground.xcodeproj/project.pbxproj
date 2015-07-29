@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181523B11B6931FB00FAD493 /* NRKMVCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181523B01B6931FB00FAD493 /* NRKMVCLoginViewController.m */; };
 		1886E40E1B690C1A000394A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886E40D1B690C1A000394A4 /* main.m */; };
 		1886E4111B690C1A000394A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886E4101B690C1A000394A4 /* AppDelegate.m */; };
 		1886E4141B690C1A000394A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886E4131B690C1A000394A4 /* ViewController.m */; };
@@ -15,6 +16,9 @@
 		1886E41C1B690C1A000394A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886E41A1B690C1A000394A4 /* LaunchScreen.storyboard */; };
 		1886E4271B690C1A000394A4 /* iOSPlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886E4261B690C1A000394A4 /* iOSPlaygroundTests.m */; };
 		1886E4321B690C1A000394A4 /* iOSPlaygroundUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886E4311B690C1A000394A4 /* iOSPlaygroundUITests.m */; };
+		18BC815E1B690FEA00266059 /* NRKLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC815D1B690FEA00266059 /* NRKLoginViewModel.m */; };
+		18BC81631B69115500266059 /* NRKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC81621B69115500266059 /* NRKLoginViewController.m */; };
+		18BC81661B6920BA00266059 /* NRKLoginRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC81651B6920BA00266059 /* NRKLoginRequester.m */; };
 		A85B2856E6E8D71DFE3E1CF0 /* libPods-iOSPlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3126C40B31F40B9ACAC871 /* libPods-iOSPlayground.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181523AF1B6931FB00FAD493 /* NRKMVCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRKMVCLoginViewController.h; sourceTree = "<group>"; };
+		181523B01B6931FB00FAD493 /* NRKMVCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRKMVCLoginViewController.m; sourceTree = "<group>"; };
 		1886E4091B690C1A000394A4 /* iOSPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1886E40D1B690C1A000394A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1886E40F1B690C1A000394A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +58,12 @@
 		1886E42D1B690C1A000394A4 /* iOSPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1886E4311B690C1A000394A4 /* iOSPlaygroundUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSPlaygroundUITests.m; sourceTree = "<group>"; };
 		1886E4331B690C1A000394A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BC815C1B690FEA00266059 /* NRKLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRKLoginViewModel.h; sourceTree = "<group>"; };
+		18BC815D1B690FEA00266059 /* NRKLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRKLoginViewModel.m; sourceTree = "<group>"; };
+		18BC81611B69115500266059 /* NRKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRKLoginViewController.h; sourceTree = "<group>"; };
+		18BC81621B69115500266059 /* NRKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRKLoginViewController.m; sourceTree = "<group>"; };
+		18BC81641B6920BA00266059 /* NRKLoginRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRKLoginRequester.h; sourceTree = "<group>"; };
+		18BC81651B6920BA00266059 /* NRKLoginRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRKLoginRequester.m; sourceTree = "<group>"; };
 		4A3126C40B31F40B9ACAC871 /* libPods-iOSPlayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSPlayground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77B008D65673A1D8EDE7E80 /* Pods-iOSPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlayground/Pods-iOSPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		E8BD9033C6546EAC3F3A1997 /* Pods-iOSPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlayground/Pods-iOSPlayground.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +120,7 @@
 		1886E40B1B690C1A000394A4 /* iOSPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				18BC815B1B690F6F00266059 /* Login */,
 				1886E40F1B690C1A000394A4 /* AppDelegate.h */,
 				1886E4101B690C1A000394A4 /* AppDelegate.m */,
 				1886E4121B690C1A000394A4 /* ViewController.h */,
@@ -145,6 +158,45 @@
 				1886E4331B690C1A000394A4 /* Info.plist */,
 			);
 			path = iOSPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		18BC815B1B690F6F00266059 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				18BC81671B6920BF00266059 /* Model */,
+				18BC81601B690FFE00266059 /* UI */,
+				18BC815F1B690FF600266059 /* VM */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		18BC815F1B690FF600266059 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				18BC815C1B690FEA00266059 /* NRKLoginViewModel.h */,
+				18BC815D1B690FEA00266059 /* NRKLoginViewModel.m */,
+			);
+			name = VM;
+			sourceTree = "<group>";
+		};
+		18BC81601B690FFE00266059 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				181523AF1B6931FB00FAD493 /* NRKMVCLoginViewController.h */,
+				181523B01B6931FB00FAD493 /* NRKMVCLoginViewController.m */,
+				18BC81611B69115500266059 /* NRKLoginViewController.h */,
+				18BC81621B69115500266059 /* NRKLoginViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		18BC81671B6920BF00266059 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18BC81641B6920BA00266059 /* NRKLoginRequester.h */,
+				18BC81651B6920BA00266059 /* NRKLoginRequester.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		822393BBD4208EF4935DEFDA /* Pods */ = {
@@ -330,7 +382,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1886E4141B690C1A000394A4 /* ViewController.m in Sources */,
+				181523B11B6931FB00FAD493 /* NRKMVCLoginViewController.m in Sources */,
 				1886E4111B690C1A000394A4 /* AppDelegate.m in Sources */,
+				18BC81661B6920BA00266059 /* NRKLoginRequester.m in Sources */,
+				18BC81631B69115500266059 /* NRKLoginViewController.m in Sources */,
+				18BC815E1B690FEA00266059 /* NRKLoginViewModel.m in Sources */,
 				1886E40E1B690C1A000394A4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
