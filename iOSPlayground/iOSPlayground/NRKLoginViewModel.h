@@ -21,6 +21,5 @@
 @property (strong, nonatomic, readonly) RACSignal *loadingSignal;
 @property (strong, nonatomic, readonly) RACCommand *loginCommand;
 @property (strong, nonatomic, readonly) RACCommand *resetCommand;
-@property (copy, nonatomic, readonly) RACSignal *loginFinishSignal;
 
 @end
