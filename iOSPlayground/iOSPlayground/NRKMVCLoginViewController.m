@@ -25,6 +25,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.loadingView.hidden = YES;
+    self.loginButton.enabled = NO;
+    self.resetButton.enabled = NO;
 }
 
 - (IBAction)resetButtonPushed:(id)sender
@@ -57,7 +60,7 @@
     }];
 }
 
-- (void)textFieldDidEndEditing:(nonnull UITextField *)textField
+- (BOOL)textField:(nonnull UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(nonnull NSString *)string
 {
     if (self.usernameTextField.text.length > 0 || self.passwordTextField.text.length > 0) {
         self.resetButton.enabled = YES;
@@ -65,10 +68,11 @@
         self.resetButton.enabled = NO;
     }
     if (self.usernameTextField.text.length > 0 && self.passwordTextField.text.length > 0) {
-        self.resetButton.enabled = YES;
+        self.loginButton.enabled = YES;
     } else {
-        self.resetButton.enabled = NO;
+        self.loginButton.enabled = NO;
     }
+    return YES;
 }
 
 @end
