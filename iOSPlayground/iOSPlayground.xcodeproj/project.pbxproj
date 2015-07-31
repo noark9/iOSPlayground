@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		181523B11B6931FB00FAD493 /* NRKMVCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181523B01B6931FB00FAD493 /* NRKMVCLoginViewController.m */; };
+		1826EA171B6BC53B00BFD04A /* NRKSimpleVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1826EA161B6BC53B00BFD04A /* NRKSimpleVideoPlayerViewController.m */; };
 		183EF1A11B693D9D001EE34C /* NRKFakeLocationLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 183EF1A01B693D9D001EE34C /* NRKFakeLocationLoader.m */; };
 		183EF1A41B693E04001EE34C /* NRKFakeGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 183EF1A31B693E04001EE34C /* NRKFakeGeocoder.m */; };
 		183EF1A71B693E67001EE34C /* NRKFakeVideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 183EF1A61B693E67001EE34C /* NRKFakeVideoEncoder.m */; };
@@ -47,6 +48,8 @@
 /* Begin PBXFileReference section */
 		181523AF1B6931FB00FAD493 /* NRKMVCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRKMVCLoginViewController.h; sourceTree = "<group>"; };
 		181523B01B6931FB00FAD493 /* NRKMVCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRKMVCLoginViewController.m; sourceTree = "<group>"; };
+		1826EA151B6BC53B00BFD04A /* NRKSimpleVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRKSimpleVideoPlayerViewController.h; sourceTree = "<group>"; };
+		1826EA161B6BC53B00BFD04A /* NRKSimpleVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRKSimpleVideoPlayerViewController.m; sourceTree = "<group>"; };
 		183EF19F1B693D9D001EE34C /* NRKFakeLocationLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRKFakeLocationLoader.h; sourceTree = "<group>"; };
 		183EF1A01B693D9D001EE34C /* NRKFakeLocationLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRKFakeLocationLoader.m; sourceTree = "<group>"; };
 		183EF1A21B693E04001EE34C /* NRKFakeGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRKFakeGeocoder.h; sourceTree = "<group>"; };
@@ -110,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1826EA141B6BC51800BFD04A /* SimplePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				1826EA151B6BC53B00BFD04A /* NRKSimpleVideoPlayerViewController.h */,
+				1826EA161B6BC53B00BFD04A /* NRKSimpleVideoPlayerViewController.m */,
+			);
+			name = SimplePlayer;
+			sourceTree = "<group>";
+		};
 		183EF19A1B693D13001EE34C /* Location */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +197,7 @@
 		1886E40B1B690C1A000394A4 /* iOSPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				1826EA141B6BC51800BFD04A /* SimplePlayer */,
 				183EF19B1B693D1D001EE34C /* MVVMDemo */,
 				1886E40F1B690C1A000394A4 /* AppDelegate.h */,
 				1886E4101B690C1A000394A4 /* AppDelegate.m */,
@@ -448,6 +461,7 @@
 			files = (
 				1886E4141B690C1A000394A4 /* ViewController.m in Sources */,
 				181523B11B6931FB00FAD493 /* NRKMVCLoginViewController.m in Sources */,
+				1826EA171B6BC53B00BFD04A /* NRKSimpleVideoPlayerViewController.m in Sources */,
 				183EF1AD1B6940DC001EE34C /* NRKFakeVideoUploader.m in Sources */,
 				183EF1A41B693E04001EE34C /* NRKFakeGeocoder.m in Sources */,
 				183EF1AA1B693F6C001EE34C /* NRKFakeVideoUploaderViewModel.m in Sources */,

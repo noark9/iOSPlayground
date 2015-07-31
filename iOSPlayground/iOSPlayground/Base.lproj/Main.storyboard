@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A226f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="57A-wS-dnG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="15A235d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="57A-wS-dnG">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -33,11 +33,21 @@
                                     <segue destination="53L-A4-iau" kind="show" id="cuL-9q-Kzl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBw-gU-YeJ">
+                                <rect key="frame" x="118" y="148" width="139" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Simple Media Player"/>
+                                <connections>
+                                    <segue destination="dlJ-Le-rFO" kind="show" id="ofi-Gx-4XP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4SW-lw-VCQ" firstAttribute="top" secondItem="yk6-Pk-fNR" secondAttribute="bottom" constant="8" symbolic="YES" id="AFs-Nx-ROY"/>
+                            <constraint firstItem="RBw-gU-YeJ" firstAttribute="centerX" secondItem="4SW-lw-VCQ" secondAttribute="centerX" id="LWX-bV-1lw"/>
+                            <constraint firstItem="RBw-gU-YeJ" firstAttribute="top" secondItem="4SW-lw-VCQ" secondAttribute="bottom" constant="8" symbolic="YES" id="NmT-Vk-gH5"/>
                             <constraint firstItem="4SW-lw-VCQ" firstAttribute="centerX" secondItem="yk6-Pk-fNR" secondAttribute="centerX" id="S7I-r5-14b"/>
                             <constraint firstItem="yk6-Pk-fNR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="apA-89-fnK"/>
                             <constraint firstItem="yk6-Pk-fNR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jQT-jM-d0K"/>
@@ -129,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1WK-XA-K5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684.5" y="95.5"/>
+            <point key="canvasLocation" x="146.5" y="-480.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cY9-nX-5C3">
@@ -147,6 +157,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u4i-xt-pTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-462" y="377"/>
+        </scene>
+        <!--Simple Video Player View Controller-->
+        <scene sceneID="Joq-yj-3kP">
+            <objects>
+                <viewController id="dlJ-Le-rFO" customClass="NRKSimpleVideoPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7gT-eh-ib1"/>
+                        <viewControllerLayoutGuide type="bottom" id="tKT-Z3-kxV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GjB-co-Chq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mF0-11-uAb">
+                                <rect key="frame" x="20" y="98" width="335" height="30"/>
+                                <animations/>
+                                <string key="text">http://k.youku.com/player/getFlvPath/sid/443835562664012fbf036_00/st/mp4/fileid/030020010055BA26CFAF801CAD439725559600-2787-0D3A-4408-4E76EB2C985B?K=d3e0327214fe61d124124a25&amp;hd=1&amp;myp=0&amp;ts=331&amp;ypp=0&amp;ymovie=1&amp;ep=diaXEkqIU8gC4yXbiD8bMX60dHQJXP4J9h%2BHgdJjALshTZrOmziisezGRv9DZYhtdiEPF%2Bn0rtXubEAUYfJEoW8Q3zqrSPrk%2BvDr5akmw5Z1FBtFe8XSxlSXRDPy&amp;ctype=12&amp;ev=1&amp;token=9733&amp;oip=1951205313</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocg-eh-urJ">
+                                <rect key="frame" x="20" y="136" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playButtonPushed:" destination="dlJ-Le-rFO" eventType="touchUpInside" id="JVS-r7-Bqo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hkv-TY-sSV">
+                                <rect key="frame" x="316" y="136" width="39" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonPushed:" destination="dlJ-Le-rFO" eventType="touchUpInside" id="OcO-KJ-Hjz"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qa-yx-qeI">
+                                <rect key="frame" x="20" y="174" width="335" height="473"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hkv-TY-sSV" firstAttribute="baseline" secondItem="ocg-eh-urJ" secondAttribute="baseline" id="0M6-nL-Wtp"/>
+                            <constraint firstItem="9qa-yx-qeI" firstAttribute="centerX" secondItem="GjB-co-Chq" secondAttribute="centerX" id="0o1-ia-fhE"/>
+                            <constraint firstItem="Hkv-TY-sSV" firstAttribute="trailing" secondItem="9qa-yx-qeI" secondAttribute="trailing" id="6Za-W9-5wl"/>
+                            <constraint firstItem="mF0-11-uAb" firstAttribute="leading" secondItem="ocg-eh-urJ" secondAttribute="leading" id="7nq-kF-Ibu"/>
+                            <constraint firstItem="ocg-eh-urJ" firstAttribute="leading" secondItem="9qa-yx-qeI" secondAttribute="leading" id="AWp-x1-mIj"/>
+                            <constraint firstItem="ocg-eh-urJ" firstAttribute="top" secondItem="mF0-11-uAb" secondAttribute="bottom" constant="8" symbolic="YES" id="Fl2-c6-PzC"/>
+                            <constraint firstItem="9qa-yx-qeI" firstAttribute="top" secondItem="ocg-eh-urJ" secondAttribute="bottom" constant="8" symbolic="YES" id="UXr-8h-nAW"/>
+                            <constraint firstItem="Hkv-TY-sSV" firstAttribute="trailing" secondItem="mF0-11-uAb" secondAttribute="trailing" id="qTa-yl-HEv"/>
+                            <constraint firstItem="mF0-11-uAb" firstAttribute="top" secondItem="7gT-eh-ib1" secondAttribute="bottom" constant="34" id="vhT-QO-ZJd"/>
+                            <constraint firstAttribute="bottom" secondItem="9qa-yx-qeI" secondAttribute="bottom" constant="20" symbolic="YES" id="x8X-Ia-cW0"/>
+                            <constraint firstItem="mF0-11-uAb" firstAttribute="leading" secondItem="GjB-co-Chq" secondAttribute="leadingMargin" constant="4" id="yJa-wW-4TZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="mF0-11-uAb" id="1tP-ij-weE"/>
+                        <outlet property="playerView" destination="9qa-yx-qeI" id="Jr7-Pe-rOp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHH-gb-Ldu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117.5" y="10.5"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="sBQ-H7-mHk">
@@ -197,8 +273,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ftF-WM-8vY">
                                 <rect key="frame" x="67" y="270" width="240" height="128"/>
                                 <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="izY-hp-JJb">
-                                        <rect key="frame" x="109" y="53" width="20" height="20"/>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="izY-hp-JJb">
+                                        <rect key="frame" x="110" y="54" width="20" height="20"/>
                                         <animations/>
                                     </activityIndicatorView>
                                 </subviews>
@@ -239,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2o-KR-RL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684.5" y="831.5"/>
+            <point key="canvasLocation" x="666.5" y="-376.5"/>
         </scene>
     </scenes>
 </document>
