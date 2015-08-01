@@ -1,8 +1,13 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '6.0'
+#
+
+use_frameworks!
 
 target 'iOSPlayground' do
     pod 'ReactiveCocoa', '~> 2.4.7'
+    pod 'AFNetworking', '~> 2.5.4'
+    pod 'PromiseKit-AFNetworking', '~> 0.5.1'
 end
 
 target 'iOSPlaygroundTests' do

@@ -49,4 +49,9 @@
     self.player = nil;
 }
 
+- (IBAction)loadYoukuVideoButtonPushed:(id)sender
+{
+    
+}
+
 @end

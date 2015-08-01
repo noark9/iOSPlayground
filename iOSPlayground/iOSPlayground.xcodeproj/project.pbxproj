@@ -25,7 +25,7 @@
 		18BC815E1B690FEA00266059 /* NRKLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC815D1B690FEA00266059 /* NRKLoginViewModel.m */; };
 		18BC81631B69115500266059 /* NRKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC81621B69115500266059 /* NRKLoginViewController.m */; };
 		18BC81661B6920BA00266059 /* NRKLoginRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC81651B6920BA00266059 /* NRKLoginRequester.m */; };
-		A85B2856E6E8D71DFE3E1CF0 /* libPods-iOSPlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3126C40B31F40B9ACAC871 /* libPods-iOSPlayground.a */; };
+		1AD6E1EA98B8DE359669D036 /* Pods_iOSPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF779C47B8E3F37D7C63F7D0 /* Pods_iOSPlayground.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,9 +82,9 @@
 		18BC81621B69115500266059 /* NRKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRKLoginViewController.m; sourceTree = "<group>"; };
 		18BC81641B6920BA00266059 /* NRKLoginRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRKLoginRequester.h; sourceTree = "<group>"; };
 		18BC81651B6920BA00266059 /* NRKLoginRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRKLoginRequester.m; sourceTree = "<group>"; };
-		4A3126C40B31F40B9ACAC871 /* libPods-iOSPlayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSPlayground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77B008D65673A1D8EDE7E80 /* Pods-iOSPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlayground/Pods-iOSPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		E8BD9033C6546EAC3F3A1997 /* Pods-iOSPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlayground/Pods-iOSPlayground.release.xcconfig"; sourceTree = "<group>"; };
+		EF779C47B8E3F37D7C63F7D0 /* Pods_iOSPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A85B2856E6E8D71DFE3E1CF0 /* libPods-iOSPlayground.a in Frameworks */,
+				1AD6E1EA98B8DE359669D036 /* Pods_iOSPlayground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +289,7 @@
 		AA390EA59635A82103F154F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A3126C40B31F40B9ACAC871 /* libPods-iOSPlayground.a */,
+				EF779C47B8E3F37D7C63F7D0 /* Pods_iOSPlayground.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -306,6 +306,7 @@
 				1886E4061B690C1A000394A4 /* Frameworks */,
 				1886E4071B690C1A000394A4 /* Resources */,
 				611D9DBE7BAEDAF45A1D21DC /* Copy Pods Resources */,
+				9BEA0E89D9686F4E4A897AF1 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -450,6 +451,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9BEA0E89D9686F4E4A897AF1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSPlayground/Pods-iOSPlayground-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
