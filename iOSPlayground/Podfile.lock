@@ -1,34 +1,4 @@
 PODS:
-  - AFNetworking (2.5.4):
-    - AFNetworking/NSURLConnection (= 2.5.4)
-    - AFNetworking/NSURLSession (= 2.5.4)
-    - AFNetworking/Reachability (= 2.5.4)
-    - AFNetworking/Security (= 2.5.4)
-    - AFNetworking/Serialization (= 2.5.4)
-    - AFNetworking/UIKit (= 2.5.4)
-  - AFNetworking/NSURLConnection (2.5.4):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.4):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.4)
-  - AFNetworking/Security (2.5.4)
-  - AFNetworking/Serialization (2.5.4)
-  - AFNetworking/UIKit (2.5.4):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
-  - PromiseKit-AFNetworking (0.5.1):
-    - AFNetworking (~> 2.5)
-    - PromiseKit/Promise (~> 2.0)
-    - PromiseKit/When
-  - PromiseKit/CorePromise (2.1.1)
-  - PromiseKit/Promise (2.1.1):
-    - PromiseKit/CorePromise
-  - PromiseKit/When (2.1.1):
-    - PromiseKit/CorePromise
   - ReactiveCocoa (2.4.7):
     - ReactiveCocoa/UI (= 2.4.7)
   - ReactiveCocoa/Core (2.4.7):
@@ -38,14 +8,9 @@ PODS:
     - ReactiveCocoa/Core
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.5.4)
-  - PromiseKit-AFNetworking (~> 0.5.1)
   - ReactiveCocoa (~> 2.4.7)
 
 SPEC CHECKSUMS:
-  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
-  PromiseKit: 45fa68ef95b049be494a1502dab228a60374ad5a
-  PromiseKit-AFNetworking: b7bf955d9e6674b021de88dfb7ebcfb9069e99d4
   ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
 
 COCOAPODS: 0.38.2

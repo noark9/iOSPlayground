@@ -18,4 +18,13 @@
 }
 */
 
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    for (UIButton *subview in self.subviews) {
+        if (subview.tag == 998 && [subview isKindOfClass:[UIButton class]]) {
+            return [subview hitTest:CGPointZero withEvent:event];
+        }
+    }
+    return nil;
+}
+
 @end

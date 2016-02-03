@@ -10,6 +10,9 @@
 
 @interface DisplayLinkViewController ()
 
+@property (nonatomic, strong) CADisplayLink *displayLink;
+@property (nonatomic, weak) IBOutlet UILabel *label;
+
 @end
 
 @implementation DisplayLinkViewController
@@ -17,11 +20,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateDisplay:)];
+    [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+    self.displayLink.paused = YES;
+    self.displayLink.frameInterval = 60;
+}
+
+- (void)dealloc
+{
+    [self.displayLink invalidate];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)updateDisplay:(CADisplayLink *)displayLink {
+    self.label.text = [NSString stringWithFormat:@"duration: %.5f, timestmp: %.5f", displayLink.duration, displayLink.timestamp];
+}
+
+- (IBAction)buttonPushed:(id)sender {
+    self.displayLink.paused = !self.displayLink.paused;
 }
 
 /*

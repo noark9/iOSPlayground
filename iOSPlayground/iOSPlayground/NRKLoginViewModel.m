@@ -9,7 +9,7 @@
 #import "NRKLoginViewModel.h"
 #import "NRKLoginRequester.h"
 
-#import <ReactiveCocoa.h>
+#import "ReactiveCocoa.h"
 
 @interface NRKLoginViewModel ()
 

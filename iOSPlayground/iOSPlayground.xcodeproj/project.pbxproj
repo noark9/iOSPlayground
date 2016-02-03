@@ -14,6 +14,7 @@
 		183EF1A71B693E67001EE34C /* NRKFakeVideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 183EF1A61B693E67001EE34C /* NRKFakeVideoEncoder.m */; };
 		183EF1AA1B693F6C001EE34C /* NRKFakeVideoUploaderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183EF1A91B693F6C001EE34C /* NRKFakeVideoUploaderViewModel.m */; };
 		183EF1AD1B6940DC001EE34C /* NRKFakeVideoUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 183EF1AC1B6940DC001EE34C /* NRKFakeVideoUploader.m */; };
+		18697E3C1C04A6B500D0460B /* DLVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18697E3B1C04A6B500D0460B /* DLVCView.m */; };
 		1886E40E1B690C1A000394A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886E40D1B690C1A000394A4 /* main.m */; };
 		1886E4111B690C1A000394A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886E4101B690C1A000394A4 /* AppDelegate.m */; };
 		1886E4141B690C1A000394A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886E4131B690C1A000394A4 /* ViewController.m */; };
@@ -25,6 +26,7 @@
 		18BC815E1B690FEA00266059 /* NRKLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC815D1B690FEA00266059 /* NRKLoginViewModel.m */; };
 		18BC81631B69115500266059 /* NRKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC81621B69115500266059 /* NRKLoginViewController.m */; };
 		18BC81661B6920BA00266059 /* NRKLoginRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BC81651B6920BA00266059 /* NRKLoginRequester.m */; };
+		18F477FD1B9FE86800E0F871 /* DisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F477FC1B9FE86800E0F871 /* DisplayLinkViewController.m */; };
 		1AD6E1EA98B8DE359669D036 /* Pods_iOSPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF779C47B8E3F37D7C63F7D0 /* Pods_iOSPlayground.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		183EF1A91B693F6C001EE34C /* NRKFakeVideoUploaderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRKFakeVideoUploaderViewModel.m; sourceTree = "<group>"; };
 		183EF1AB1B6940DC001EE34C /* NRKFakeVideoUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRKFakeVideoUploader.h; sourceTree = "<group>"; };
 		183EF1AC1B6940DC001EE34C /* NRKFakeVideoUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRKFakeVideoUploader.m; sourceTree = "<group>"; };
+		18697E3A1C04A6B500D0460B /* DLVCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLVCView.h; sourceTree = "<group>"; };
+		18697E3B1C04A6B500D0460B /* DLVCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLVCView.m; sourceTree = "<group>"; };
 		1886E4091B690C1A000394A4 /* iOSPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1886E40D1B690C1A000394A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1886E40F1B690C1A000394A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 		18BC81621B69115500266059 /* NRKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRKLoginViewController.m; sourceTree = "<group>"; };
 		18BC81641B6920BA00266059 /* NRKLoginRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRKLoginRequester.h; sourceTree = "<group>"; };
 		18BC81651B6920BA00266059 /* NRKLoginRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRKLoginRequester.m; sourceTree = "<group>"; };
+		18F477FB1B9FE86800E0F871 /* DisplayLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayLinkViewController.h; sourceTree = "<group>"; };
+		18F477FC1B9FE86800E0F871 /* DisplayLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayLinkViewController.m; sourceTree = "<group>"; };
 		D77B008D65673A1D8EDE7E80 /* Pods-iOSPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlayground/Pods-iOSPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		E8BD9033C6546EAC3F3A1997 /* Pods-iOSPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlayground/Pods-iOSPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		EF779C47B8E3F37D7C63F7D0 /* Pods_iOSPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +178,15 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		18697E391C04A68200D0460B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				18697E3A1C04A6B500D0460B /* DLVCView.h */,
+				18697E3B1C04A6B500D0460B /* DLVCView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		1886E4001B690C1A000394A4 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +212,7 @@
 		1886E40B1B690C1A000394A4 /* iOSPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				18F477FA1B9FE83E00E0F871 /* DisplayLink */,
 				1826EA141B6BC51800BFD04A /* SimplePlayer */,
 				183EF19B1B693D1D001EE34C /* MVVMDemo */,
 				1886E40F1B690C1A000394A4 /* AppDelegate.h */,
@@ -275,6 +291,16 @@
 				18BC81651B6920BA00266059 /* NRKLoginRequester.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		18F477FA1B9FE83E00E0F871 /* DisplayLink */ = {
+			isa = PBXGroup;
+			children = (
+				18697E391C04A68200D0460B /* view */,
+				18F477FB1B9FE86800E0F871 /* DisplayLinkViewController.h */,
+				18F477FC1B9FE86800E0F871 /* DisplayLinkViewController.m */,
+			);
+			name = DisplayLink;
 			sourceTree = "<group>";
 		};
 		822393BBD4208EF4935DEFDA /* Pods */ = {
@@ -364,6 +390,7 @@
 				TargetAttributes = {
 					1886E4081B690C1A000394A4 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 7H6KWF2CU7;
 					};
 					1886E4211B690C1A000394A4 = {
 						CreatedOnToolsVersion = 7.0;
@@ -476,11 +503,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1886E4141B690C1A000394A4 /* ViewController.m in Sources */,
+				18F477FD1B9FE86800E0F871 /* DisplayLinkViewController.m in Sources */,
 				181523B11B6931FB00FAD493 /* NRKMVCLoginViewController.m in Sources */,
 				1826EA171B6BC53B00BFD04A /* NRKSimpleVideoPlayerViewController.m in Sources */,
 				183EF1AD1B6940DC001EE34C /* NRKFakeVideoUploader.m in Sources */,
 				183EF1A41B693E04001EE34C /* NRKFakeGeocoder.m in Sources */,
 				183EF1AA1B693F6C001EE34C /* NRKFakeVideoUploaderViewModel.m in Sources */,
+				18697E3C1C04A6B500D0460B /* DLVCView.m in Sources */,
 				1886E4111B690C1A000394A4 /* AppDelegate.m in Sources */,
 				18BC81661B6920BA00266059 /* NRKLoginRequester.m in Sources */,
 				183EF1A71B693E67001EE34C /* NRKFakeVideoEncoder.m in Sources */,
@@ -627,7 +656,9 @@
 			baseConfigurationReference = D77B008D65673A1D8EDE7E80 /* Pods-iOSPlayground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iOSPlayground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.afk.iOSPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -639,7 +670,9 @@
 			baseConfigurationReference = E8BD9033C6546EAC3F3A1997 /* Pods-iOSPlayground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iOSPlayground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.afk.iOSPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";

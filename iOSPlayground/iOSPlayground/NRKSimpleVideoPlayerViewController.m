@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UIView *playerView;
 @property (weak, nonatomic) IBOutlet UITextField *addressTextField;
 @property (strong, nonatomic) AVPlayer *player;
+@property (nonatomic, strong) AVAsset *asset;
+@property (nonatomic, strong) AVPlayerItem *playerItem;
 @property (strong, nonatomic) AVPlayerLayer *playerLayer;
 
 @end
@@ -29,16 +31,39 @@
 - (IBAction)playButtonPushed:(id)sender
 {
     if (!self.player) {
-        self.player = [AVPlayer playerWithURL:[NSURL URLWithString:self.addressTextField.text]];
-        self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
-        self.playerLayer.frame = self.playerView.bounds;
-        self.playerLayer.videoGravity = AVLayerVideoGravityResize;
-        [self.playerView.layer addSublayer:self.playerLayer];
+        AVURLAsset *urlAsset = [AVURLAsset URLAssetWithURL:[NSURL URLWithString:self.addressTextField.text] options:nil];
+        self.asset = urlAsset;
+        __weak typeof(self) weakSelf = self;
+        [self.class createSeamlessLoopAssetWithAsset:urlAsset complete:^(AVComposition *composition) {
+            weakSelf.playerItem = [AVPlayerItem playerItemWithAsset:composition];
+            weakSelf.player = [AVPlayer playerWithPlayerItem:weakSelf.playerItem];
+            weakSelf.playerLayer = [AVPlayerLayer playerLayerWithPlayer:weakSelf.player];
+            weakSelf.playerLayer.frame = weakSelf.playerView.bounds;
+            weakSelf.playerLayer.videoGravity = AVLayerVideoGravityResize;
+            [weakSelf.playerView.layer addSublayer:weakSelf.playerLayer];
+            [weakSelf.player play];
+        }];
     }
-    if (self.player.rate > 0.0f) {
-        return;
-    }
-    [self.player play];
+}
+
++ (void)createSeamlessLoopAssetWithAsset:(AVAsset *)asset complete:(void (^) (AVComposition *composition))complete {
+    [asset loadValuesAsynchronouslyForKeys:@[@"duration"] completionHandler:^{
+        AVMutableComposition *composition = [AVMutableComposition composition];
+        CMTime duration = asset.duration;
+        CMTime timeToCut = CMTimeMakeWithSeconds(0.05f, duration.timescale);
+        duration = CMTimeSubtract(duration, timeToCut);
+        duration = CMTimeSubtract(duration, timeToCut);
+        CMTime startTime = kCMTimeZero;
+        CMTime currentDuration = kCMTimeZero;
+        for (int i = 0; i < 20; i++) {
+            [composition insertTimeRange:CMTimeRangeMake(startTime, duration) ofAsset:asset atTime:currentDuration error:NULL];
+            currentDuration = composition.duration;
+            startTime = timeToCut;
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            complete(composition.copy);
+        });
+    }];
 }
 
 - (IBAction)resetButtonPushed:(id)sender

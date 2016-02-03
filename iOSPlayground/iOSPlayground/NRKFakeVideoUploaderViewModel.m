@@ -6,7 +6,7 @@
 //  Copyright © 2015 noark. All rights reserved.
 //
 
-#import <ReactiveCocoa.h>
+#import "ReactiveCocoa.h"
 
 #import "NRKFakeVideoUploaderViewModel.h"
 #import "NRKFakeGeocoder.h"
