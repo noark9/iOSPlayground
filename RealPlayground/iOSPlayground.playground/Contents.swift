@@ -54,10 +54,14 @@ class DrawView: UIView {
         CGContextSaveGState(context)
 //        CGContextTranslateCTM(context, 25, 14)
 //        CGContextScaleCTM(context, 1.4, 1)
+        let fillimage = UIImage(named: "img")
+//        let color = UIColor(patternImage: fillimage!)
+        let string: NSString = "123hha 哈哈"
         
         let rectanglePath = UIBezierPath(rect: CGRectMake(0, 0, 25, 29))
-        UIColor.grayColor().setFill()
-        rectanglePath.fill()
+//        UIColor.grayColor().setFill()
+        UIColor(patternImage: fillimage!).setFill()
+//        rectanglePath.fill()
         
         CGContextRestoreGState(context)
         CGContextSaveGState(context)
@@ -66,6 +70,11 @@ class DrawView: UIView {
         UIColor.grayColor().setFill()
         clearRectanglePath.fill()
         CGContextRestoreGState(context)
+        UIColor(patternImage: fillimage!).setFill()
+        
+        CGContextSetTextDrawingMode(context, .Fill)
+        string.drawAtPoint(CGPointZero, withAttributes: nil)
+        
     }
 }
 
